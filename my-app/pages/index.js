@@ -242,9 +242,9 @@ export default function Home() {
 
       const _cryptoDevTokenReserve = await getReserveOfCDTokens(provider);
 
-      const {_removeEth, _removeCD} = await getTokensAfterRemove(provider, _removeLPTokensWei, _ethBalanceContract, _cryptoDevTokenReserve);
+      const {_removeEther,_removeCD} = await getTokensAfterRemove(provider, _removeLPTokensWei, _ethBalanceContract, _cryptoDevTokenReserve);
 
-      setRemoveEth(_removeEth);
+      setRemoveEth(_removeEther);
       setRemoveCD(_removeCD);
     } catch (err) {
       console.error(err);
